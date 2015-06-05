@@ -205,6 +205,7 @@ typedef struct {
 
 #if (NGX_HTTP_REALIP)
     ngx_table_elt_t                  *x_real_ip;
+    ngx_table_elt_t                  *x_real_ip_proxy;
 #endif
 
 #if (NGX_HTTP_HEADERS)
