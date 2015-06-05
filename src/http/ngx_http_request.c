@@ -158,6 +158,9 @@ ngx_http_header_t  ngx_http_headers_in[] = {
 #if (NGX_HTTP_REALIP)
     { ngx_string("X-Real-IP"),
                  offsetof(ngx_http_headers_in_t, x_real_ip),
+                 ngx_http_process_header_line }
+    { ngx_string("X-Real-IP-Proxy"),
+                 offsetof(ngx_http_headers_in_t, x_real_ip_proxy),
                  ngx_http_process_header_line },
 #endif
 
